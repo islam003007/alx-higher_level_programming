@@ -12,12 +12,22 @@
 
 int check_cycle(listint_t *list)
 {
-	listint_t *temp = list;
+	listint_t *temp;
+	listint_t *temp_head = list;
+	int i, n = 0;
 
 	while (list != NULL)
 	{
 		list = list->next;
-		if (list == temp)
+		n++;
+		i = 0;
+		temp = temp_head;
+		while (temp != list)
+		{
+			temp = temp->next;
+			i++;
+		}
+		if (n != i)
 			return (1);
 	}
 
