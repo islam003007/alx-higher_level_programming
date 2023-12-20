@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 def no_c(my_string):
-    new = my_string.remove('c')
-    new = my_string.remove('C')
-    return new
+    new = []
+    for i in my_string:
+        if i != 'c' or i != 'C'
+            new.append(i)
+    return "".join(new)
