@@ -5,7 +5,7 @@ using "add_integer"
 ------------------
 
 import:
-    >>> add_integer = __import__(tests/0-add_integer.txt)
+    >>> add_integer = __import__("0-add_integer").add_integer
 
 
 check one int:
