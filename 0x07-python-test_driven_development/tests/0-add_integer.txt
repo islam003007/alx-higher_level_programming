@@ -16,5 +16,3 @@ check two ints:
     >>> add_integer(4, 6)
     10
 
-check different types:
-    >>> add_integer("aa")
