@@ -18,3 +18,6 @@ check two ints:
 
 check different types:
     >>> add_integer("aa")
+    Traceback (most recent call last):
+    ...
+    TypeError: a must be an integer
