@@ -27,3 +27,7 @@ check different types:
     Traceback (most recent call last):
     ...
     TypeError: b must be an integer
+
+check flaot type:
+    >>> add_integer(3.5, 4.5)
+    7
