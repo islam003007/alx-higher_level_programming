@@ -1,0 +1,17 @@
+The "0-add_integer" module
+==========================
+
+using "add_integer"
+------------------
+
+import:
+    >>> add_integer = __import__(tests/0-add_integer.txt)
+
+
+check one int:
+    >>> add_integer(2)
+    100
+
+check two ints:
+    >>> add_integer(4, 6)
+    10
