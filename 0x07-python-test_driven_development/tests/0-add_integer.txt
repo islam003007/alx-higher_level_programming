@@ -16,4 +16,14 @@ check two ints:
     >>> add_integer(4, 6)
     10
 
+check different types:
+    >>> add_integer("aa")
+    Traceback (most recent call last):
+    ...
+    TypeError: a must be an integer
 
+check different types:
+    >>> add_integer(5, "bb")
+    Traceback (most recent call last):
+    ...
+    TypeError: b must be an integer
