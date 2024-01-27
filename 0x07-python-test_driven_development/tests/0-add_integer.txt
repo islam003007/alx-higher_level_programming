@@ -21,3 +21,9 @@ check different types:
     Traceback (most recent call last):
     ...
     TypeError: a must be an integer
+
+check different types:
+    >>> add_integer(5, "bb")
+    Traceback (most recent call last):
+    ...
+    TypeError: b must be an integer
