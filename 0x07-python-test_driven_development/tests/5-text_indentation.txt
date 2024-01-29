@@ -1,0 +1,39 @@
+The "5-text_indentation" module
+================================
+
+Testing "text_indentation" function
+-----------------------------------
+
+>>> text_indentation = __import__("5-text_indentation").text_indentation
+
+
+checking normal condition:
+    >>> text_indentation("""Lorem ipsum dolor sit amet, consectetur adipiscing elit. \
+    ... Quonam modo? Utrum igitur tibi litteram videor an totas paginas commovere? \
+    ... """)
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    <BLANKLINE>
+    Quonam modo?
+    <BLANKLINE>
+    Utrum igitur tibi litteram videor an totas paginas commovere?
+    <BLANKLINE>
+    <BLANKLINE>
+
+
+checking missing argument:
+    >>> text_indentation()
+    Traceback (most recent call last):
+    ...
+    TypeError: text_indentation() missing 1 required positional argument: 'text'
+
+
+checking TypeError of text:
+    >>> text_indentation(123)
+    Traceback (most recent call last):
+    ...
+    TypeError: text must be a string
+
+testing empty string:
+    >>> text_indentation("")
+    <BLANKLINE>
+
