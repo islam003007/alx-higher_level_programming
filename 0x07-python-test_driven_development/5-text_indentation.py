@@ -3,13 +3,14 @@
 
 
 def text_indentation(text):
-    """prints a text with 2 new lines after each of these characters: ., ? and :"""
-    
+    """prints a text with 2 new lines after each of these characters:
+    ., ? and :"""
+
     if type(text) is not str:
         raise TypeError("text must be a string")
-    
+
     for i in range(len(text)):
-        if text[i-1]in (".", "?", ":") and text[i] in " \t":
+        if text[i-1] in (".", "?", ":") and text[i] in " \t":
             continue
         print(text[i], end="")
         if text[i] in (".", "?", ":"):
