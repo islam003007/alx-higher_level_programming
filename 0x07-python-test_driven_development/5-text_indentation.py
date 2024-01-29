@@ -8,13 +8,13 @@ def text_indentation(text):
     if type(text) is not str:
         raise TypeError("text must be a string")
     
-    i = 0
-    while i < len(text):
+    for i in range(len(text)):
+        if text[i-1]in (".", "?", ":") and text[i] == " ":
+            continue
         print(text[i], end="")
         if text[i] in (".", "?", ":"):
             print("\n")
-            i+=1
-        i+=1
+
 
 if __name__ == "__main__":
     import doctest
