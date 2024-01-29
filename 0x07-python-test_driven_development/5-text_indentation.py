@@ -9,7 +9,7 @@ def text_indentation(text):
         raise TypeError("text must be a string")
     
     for i in range(len(text)):
-        if text[i-1]in (".", "?", ":") and text[i] == " ":
+        if text[i-1]in (".", "?", ":") and text[i] in " \t":
             continue
         print(text[i], end="")
         if text[i] in (".", "?", ":"):
