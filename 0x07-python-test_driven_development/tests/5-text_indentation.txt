@@ -13,10 +13,9 @@ checking normal condition:
     ... """)
     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
     <BLANKLINE>
-     Quonam modo?
+    Quonam modo?
     <BLANKLINE>
-     Utrum igitur tibi litteram videor an totas paginas commovere?
-    <BLANKLINE>
+    Utrum igitur tibi litteram videor an totas paginas commovere?
     <BLANKLINE>
 
 checking missing argument:
