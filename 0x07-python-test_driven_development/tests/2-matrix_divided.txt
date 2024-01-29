@@ -78,3 +78,19 @@ checking division by zero:
     ZeroDivisionError: division by zero
 
 
+checking div overflow:
+    >>> matrix = [
+    ...      [1, 2, 3],
+    ...      [4, 5, 6]
+    ... ]
+    >>> print(matrix_divided(matrix, float("inf")))
+    [[0.0, 0.0, 0.0], [0.0, 0.0, 0.0]]
+
+
+checking div by NaN:
+    >>> matrix = [
+    ...      [1, 2, 3],
+    ...      [4, 5, 6]
+    ... ]
+    >>> print(matrix_divided(matrix, float("NaN")))
+    [[nan, nan, nan], [nan, nan, nan]]
