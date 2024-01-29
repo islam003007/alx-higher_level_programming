@@ -9,12 +9,12 @@ test "say_my_name" function
 
 checking normal condition:
     >>> say_my_name("John", "Smith")
-    my name is John Smith
+    My name is John Smith
 
 
 checking missing one argument:
     >>> say_my_name("John")
-    my name is John 
+    My name is John 
 
 
 checking missing 2 arguments:
