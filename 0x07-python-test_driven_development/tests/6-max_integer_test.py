@@ -14,6 +14,11 @@ class TestMaxInteger(unittest.TestCase):
         list = [1, 2, 3, 4]
         self.assertEqual(max_integer(list), 4)
     
+    def test_one_element(self):
+        """tests one element condition"""
+        list = [1]
+        self.assertEqual(max_integer(list), 1)
+    
     def test_missing_argument(self):
         """tests missing one argument"""
         self.assertIsNone(max_integer())
