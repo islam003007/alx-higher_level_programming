@@ -21,7 +21,7 @@ def text_indentation(text):
                     counter += 1
                 else:
                     break
-            i += counter + 1
+            i += counter
         i+= 1
 
 
