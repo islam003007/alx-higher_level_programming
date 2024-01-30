@@ -9,12 +9,20 @@ def text_indentation(text):
     if type(text) is not str:
         raise TypeError("text must be a string")
 
-    for i in range(len(text)):
-        if text[i-1] in (".", "?", ":") and text[i] in " \t":
-            continue
+    i = 0
+    
+    while i < len(text):
         print(text[i], end="")
         if text[i] in (".", "?", ":"):
             print("\n")
+            counter = 0
+            for j in range(i, len(text)):
+                if text[j] in " \t":
+                    counter += 1
+                else:
+                    break
+            i += counter + 1
+        i+= 1
 
 
 if __name__ == "__main__":
