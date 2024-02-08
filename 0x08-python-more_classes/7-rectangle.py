@@ -48,8 +48,9 @@ class Rectangle:
     def __str__(self):
         if self.width == 0 or self.height == 0:
             return ""
-        str = (str(self.print_symbol) * self.width + "\n") * (self.height - 1) + (str(self.print_symbol) * self.width)
-        return str
+        s = str(self.print_symbol)
+        return (
+            s * self.width + "\n") * (self.height - 1) + (s * self.width)
 
     def __repr__(self):
         return "Rectangle(" + str(self.width) + ", " + str(self.height) + ")"
