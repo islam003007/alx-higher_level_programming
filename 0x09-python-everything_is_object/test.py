@@ -1,5 +1,5 @@
-a = 9999999999999
-b = 9999999999999
-print(a)
-print(b)
-print(a is b)
+a = [1, 2, 3, 4]
+print(id(a))
+[1, 2, 3, 4]
+a = a + [5]
+print(id(a))
