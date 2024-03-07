@@ -1,10 +1,7 @@
 #!/usr/bin/python3
-"""this module has function that cis like isinstance()"""
+"""this module has function that checks for exact instance"""
 
 
 def is_same_class(obj, a_class):
-    """isinstance() clone"""
-    if type(obj) == a_class:
-        return True
-    else:
-        return False
+    """checks for exact instanc"""
+    return (type(obj) is a_class)
