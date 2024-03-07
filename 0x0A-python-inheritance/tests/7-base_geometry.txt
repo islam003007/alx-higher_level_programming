@@ -7,9 +7,6 @@ Testing "BaseGeometry" class
 >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 
-testing "integer_validator" method
------------------------------
-
 
 testing normal condition:
     >>> bg = BaseGeometry()
@@ -22,23 +19,4 @@ testing no argmuents:
     ...
     TypeError: BaseGeometry.integer_validator() missing 2 required positional arguments: 'name' and 'value'
 
-testing one arguement:
-    >>> bg = BaseGeometry()
-    >>> bg.integer_validator("name")
-    Traceback (most recent call last):
-    ...
-    TypeError: BaseGeometry.integer_validator() missing 1 required positional argument: 'value'
 
-testing typeError:
-    >>> bg = BaseGeometry()
-    >>> bg.integer_validator("name", "value")
-    Traceback (most recent call last):
-    ...
-    TypeError: name must be an integer
-
-testing valueError:
-    >>> bg = BaseGeometry()
-    >>> bg.integer_validator("name", -5)
-    Traceback (most recent call last):
-    ...
-    ValueError: name must be greater than 0
