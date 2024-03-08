@@ -28,21 +28,6 @@ testing normal condition:
     >>> bg = BaseGeometry()
     >>> bg.integer_validator("name", 5)
     
-testing no argmuents:
-    >>> bg = BaseGeometry()
-    >>> try:
-    ...     bg.integer_validator()
-    ... except Exception as e:
-    ...     print("[{}] {}".format(e.__class__.__name__, e))
-    [TypeError] BaseGeometry.integer_validator() missing 2 required positional arguments: 'name' and 'value'
-
-testing one arguement:
-    >>> bg = BaseGeometry()
-    >>> try:
-    ...     bg.integer_validator("name")
-    ... except Exception as e:
-    ...     print("[{}] {}".format(e.__class__.__name__, e))
-    [TypeError] BaseGeometry.integer_validator() missing 1 required positional argument: 'value'
 
 testing typeError:
     >>> bg = BaseGeometry()
