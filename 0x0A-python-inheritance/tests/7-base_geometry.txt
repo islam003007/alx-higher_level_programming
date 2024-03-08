@@ -68,6 +68,14 @@ testing typeError:
     ...     print("[{}] {}".format(e.__class__.__name__, e))
     [TypeError] name must be an integer
 
+testing typeError:
+    >>> bg = BaseGeometry()
+    >>> try:
+    ...     bg.integer_validator("name", {5, 4})
+    ... except Exception as e:
+    ...     print("[{}] {}".format(e.__class__.__name__, e))
+    [TypeError] name must be an integer
+
 testing valueError:
     >>> bg = BaseGeometry()
     >>> try:
@@ -76,3 +84,10 @@ testing valueError:
     ...     print("[{}] {}".format(e.__class__.__name__, e))
     [ValueError] name must be greater than 0
 
+testing valueError:
+    >>> bg = BaseGeometry()
+    >>> try:
+    ...     bg.integer_validator("name", 0)
+    ... except Exception as e:
+    ...     print("[{}] {}".format(e.__class__.__name__, e))
+    [ValueError] name must be greater than 0
