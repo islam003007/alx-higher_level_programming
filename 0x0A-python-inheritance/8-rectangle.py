@@ -4,7 +4,7 @@
 BaseGeometry = __import__("7-base_geometry").BaseGeometry
 
 class rectangle(BaseGeometry):
-    """a rectangle class"""
+    """a rectangle class that inherits from BaseGeonmetry"""
     
     def __init__(self, width, height):
         self.integer_validator("width", width)
