@@ -2,9 +2,6 @@
 """this module has a rectangle class"""
 
 
-BaseGeometry = __import__("7-base_geometry").BaseGeometry
-
-
 class rectangle(BaseGeometry):
     """a rectangle class that inherits from BaseGeonmetry"""
 
